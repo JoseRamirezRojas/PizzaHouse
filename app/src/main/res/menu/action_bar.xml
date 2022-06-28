@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="2"
+        android:title="Mi perfil" />
+
+    <item
+        android:id="@+id/action_information"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="4"
+        android:title="Contacto"/>
+    <item
+        android:id="@+id/action_close"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:orderInCategory="3"
+        android:title="Cerrar Sesión"/>
+
+    <item
+        android:id="@+id/test"
+        android:orderInCategory="1"
+        android:title="D"
+        app:showAsAction="always"
+        android:icon="@android:drawable/radiobutton_off_background">
+    </item>
+
+
+
+</menu>

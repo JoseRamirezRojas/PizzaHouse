@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Crear nueva cuenta"
+            android:textColor="#FF5722"
+            android:textSize="25dp"></TextView>
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Elige un nombre de usuario"
+            android:textColor="#FF3D00"
+            android:textColorHint="@color/purple_200"></EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Crea tu contraseña"
+            android:inputType="textPassword"
+            android:textColor="#FF3D00"
+            android:textColorHint="@color/purple_200"></EditText>
+
+        <EditText
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Registra tu número de tarjeta bancaria"
+            android:inputType="numberPassword"
+            android:textColor="#FF3D00"
+            android:textColorHint="@color/purple_200" />
+
+        <!--<EditText
+            android:id="@+id/user_birthdate"
+            android:hint="@string/birth_date"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText> -->
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n Género"
+            android:textAlignment="viewStart"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/men"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="Hombre"
+                android:textColor="#FF5722" />
+
+            <RadioButton
+                android:id="@+id/women"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:text="Mujer"
+                android:textColor="#FF5722" />
+
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Otro"
+                android:textColor="#FF5722" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Terminar registro"></Button>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
